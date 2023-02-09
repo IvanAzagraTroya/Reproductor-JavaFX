@@ -1,0 +1,29 @@
+Button:hover{
+    /*-fx-border-insets: none;*/
+    /*border: none;*/
+    /*outline: none;*/
+    -fx-background-color: linear-gradient(#fafdfe, #e8f5fc);
+
+    -fx-opacity: 0.8;
+    -fx-border-color: linear-gradient(from 0% 0% to 100% 100%, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    -fx-cursor: pointer;
+    -fx-position-shape: relative;
+    position: relative;
+    z-index: 0;
+    -fx-border-radius: none;
+}
+
+
+#mainAnchorPane{
+    -fx-background-color: #beffff;
+}
+
+Button{
+    -fx-background-color: #dcecf5;
+}
+.list-cell {
+    -fx-background-color: transparent;
+}
+.list-view {
+    -fx-background-color: transparent;
+}

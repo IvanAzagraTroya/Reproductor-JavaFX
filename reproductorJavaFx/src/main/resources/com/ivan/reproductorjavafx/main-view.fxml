@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainAnchorPane" prefHeight="352.0" prefWidth="671.0" stylesheets="@../../../StyleSheet.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivan.reproductorjavafx.controller.Controller">
+   <children>
+      <StackPane prefHeight="505.0" prefWidth="770.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="501.0" prefWidth="759.0">
+               <children>
+                  <Button fx:id="menuButton" layoutX="6.0" layoutY="2.0" mnemonicParsing="false" onAction="#onMenuClick" text="%menu" />
+                  <StackPane layoutX="214.0" layoutY="30.0" prefHeight="453.0" prefWidth="538.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <AnchorPane fx:id="reproductorAnchorPane" prefHeight="482.0" prefWidth="538.0">
+                           <children>
+                              <fx:include fx:id="reproductor_view" source="reproductor-view.fxml" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="453.0" prefWidth="214.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="556.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <AnchorPane prefHeight="426.0" prefWidth="214.0">
+                           <children>
+                              <fx:include fx:id="canciones_view" source="canciones-view.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+            <VBox fx:id="menuVBox" maxHeight="1.7976931348623157E308" maxWidth="150.0" prefHeight="453.0" prefWidth="136.0" translateX="-460.0">
+               <children>
+                  <Button fx:id="abrirButton" mnemonicParsing="false" onAction="#onOpenSongClick" text="%abrir" />
+                  <Button fx:id="themeButton" mnemonicParsing="false" onAction="#onThemeButtonClicked" text="%theme" />
+                  <Button fx:id="salirButton" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#onExitButtonClick" text="%salir" />
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
